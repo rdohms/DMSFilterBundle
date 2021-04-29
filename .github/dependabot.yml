@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: symfony/yaml
+    versions:
+    - 4.4.19
+    - 4.4.20
+  - dependency-name: symfony/dependency-injection
+    versions:
+    - 4.4.19
+    - 4.4.20
+  - dependency-name: symfony/config
+    versions:
+    - 4.4.19
+  - dependency-name: symfony/http-foundation
+    versions:
+    - 4.4.19
